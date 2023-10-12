@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: "18"
+          node-version: "20"
 
       - name: Get yarn cache
         id: yarn-cache
@@ -39,7 +39,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          github_token: ${{ secrets.aaa }}
+          github_token: ${{ secrets.pages }}
           publish_dir: ./out
         env:
           ACTIONS_STEP_DEBUG: true
