@@ -41,3 +41,5 @@ jobs:
         with:
           github_token: ${{ secrets.pages }}
           publish_dir: ./out
+        env:
+          ACTIONS_STEP_DEBUG: true
