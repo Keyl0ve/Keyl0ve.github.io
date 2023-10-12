@@ -39,7 +39,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          github_token: ${{ secrets.pages }}
+          github_token: ${{ secrets.aaa }}
           publish_dir: ./out
         env:
           ACTIONS_STEP_DEBUG: true
